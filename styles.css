@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    background-color: /*#DEF9E1*/#2d2d2d;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 7vh;
+    color: #999;
+}
+
+img, h2, li, embed, p{ 
+    visibility: hidden;
+     color: #999;
+     font-size: 4vh;
+}
+
+.all{
+    text-align: center;
+}
+
+
+.überschrift{
+font-size: 5vh;
+}
+
+.longtext{
+    text-align: left;
+    color: black;
+    background-color: darkgrey;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38em
+}
+
+.longtext b{
+   background-color: darkgray;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.longtext2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 38em 
+}
+
+
+
+/* Scrollleiste ausblenden */
+body::-webkit-scrollbar {
+  display: none;
+}
+body{
+-ms-overflow-style: none;
+}
+
+
+
+/*       Übergänge           */
+
+.horizTranslate {
+ text-align: left;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  margin-left: 50% !important;
+}
+
+
+
+.horizp{
+ text-align: center;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  margin-left: 20% !important;
+    margin-right: auto;
+    width: 30em 
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
