@@ -33,13 +33,15 @@ function ever(){
      
     if(all[i].classList.contains("longtext")){
     all[i].scrollIntoView();
-    scrollBy(0, -37);  
+    scrollBy(0, -17);  
     }
         
     if(all[i] == document.getElementById("vergleich") || all[i] == document.getElementById("vergleich2") || all[i].classList.contains("zeig")){
         all[i].scrollIntoView();
     }    
     
+        
+     
     //das passiert bei allen Elementen.
     all[i].classList.add("fade-in");
     all[i].style.visibility = "visible"; 

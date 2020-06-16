@@ -15,7 +15,7 @@ h1{
     color: #999;
 }
 
-img, h2, li, embed, p{ 
+img, h2, li, embed, p, tr{ 
     visibility: hidden;
      color: #999;
      font-size: 4vh;
@@ -24,7 +24,6 @@ img, h2, li, embed, p{
 .all{
     text-align: center;
 }
-
 
 .überschrift{
 font-size: 5vh;
@@ -48,12 +47,17 @@ font-size: 5vh;
     border-radius: 30px;
 }
 
+.longtext strong{
+   font-size: 20px;
+   background-color: darkgray;
+   color: midnightblue;
+}
+
 .longtext2{
     margin-left: auto;
     margin-right: auto;
     width: 38em 
 }
-
 
 
 /* Scrollleiste ausblenden */
