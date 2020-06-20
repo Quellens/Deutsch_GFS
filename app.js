@@ -40,7 +40,9 @@ function ever(){
         all[i].scrollIntoView();
     }    
     
-        
+    if(all[i] == document.getElementById("compvgl")){
+       document.body.style.backgroundColor = "#d6d6c2";
+    }    
      
     //das passiert bei allen Elementen.
     all[i].classList.add("fade-in");

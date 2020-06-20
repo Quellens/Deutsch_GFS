@@ -5,9 +5,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu';
-    background-color: /*#DEF9E1*/#2d2d2d;
+    
 }
-
+body{
+   background-color: /*#DEF9E1*/#2d2d2d; 
+}
 
 h1{
     text-align: center;
