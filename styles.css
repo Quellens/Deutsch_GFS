@@ -17,7 +17,7 @@ h1{
     color: #999;
 }
 
-img, h2, li, embed, p, tr{ 
+img, h2, li, embed, p, tr, a{ 
     visibility: hidden;
      color: #999;
      font-size: 4vh;
@@ -61,7 +61,14 @@ font-size: 5vh;
     width: 38em 
 }
 
-
+a {
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    background-color: indianred;
+    border-radius: 30px;
+    padding: 2px;
+}
 /* Scrollleiste ausblenden */
 body::-webkit-scrollbar {
   display: none;

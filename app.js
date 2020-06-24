@@ -1,6 +1,6 @@
 let clicked = false;
 addEventListener("keydown",(event)=>{
-    if(event.keyCode == 13)
+    if(event.keyCode == 13 || event.keyCode == 39)
     clicked = true;
 })
 
@@ -12,6 +12,16 @@ let all = Array.prototype
 all[11] = document.getElementById("übersetzung3");
 all[12] = document.getElementById("übersetzung1");
 all[13] = document.getElementById("übersetzung2");
+
+var mobile = ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)); 
+
+if(mobile){
+all[0].style.visibility = "visible";
+all[0].innerHTML = "Diese Webseite funktioniert nicht auf dem Handy. <br> Bitte probier es einem PC/ Laptop <br><br> Ich wünsch euch viel Spaß beim Durchlesen bzw. Durcharbeiten der Webseite 😊"
+}
+   
+
+
 
 function ever(){
     requestAnimationFrame(ever);
@@ -40,18 +50,24 @@ function ever(){
         all[i].scrollIntoView();
     }    
     
-    if(all[i] == document.getElementById("compvgl")){
-       document.body.style.backgroundColor = "#d6d6c2";
-    }    
+    if(all[i] == document.getElementById("compvgl"))
+       document.body.style.backgroundColor = "#1a1a1a";
+    if(all[i] == document.getElementById("weg"))
+       document.body.style.backgroundColor = "#2d2d2d";
+    if(all[i] == document.getElementById("change"))
+       document.body.style.backgroundColor = "#cccccc";     
+        
+        
      
     //das passiert bei allen Elementen.
     all[i].classList.add("fade-in");
     all[i].style.visibility = "visible"; 
-    i++;
+    i++; 
     }
-    
+   
     clicked = false;
 }
+if(!mobile)
 ever();
 
 
