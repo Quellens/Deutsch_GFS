@@ -8,7 +8,7 @@ let i = 0;
 let all = Array.prototype
                .filter
                .call(document.querySelector(".all").children, ele=> ele.tagName != "BR");
-//wenn sich die einleitung ändert, wichtig!!!: index dementsprechend ändern
+
 all[11] = document.getElementById("übersetzung3");
 all[12] = document.getElementById("übersetzung1");
 all[13] = document.getElementById("übersetzung2");
@@ -17,11 +17,8 @@ var mobile = ((typeof window.orientation !== "undefined") || (navigator.userAgen
 
 if(mobile){
 all[0].style.visibility = "visible";
-all[0].innerHTML = "Diese Webseite funktioniert nicht auf dem Handy. <br> Bitte probier es einem PC/ Laptop <br><br> Ich wünsch euch viel Spaß beim Durchlesen bzw. Durcharbeiten der Webseite 😊"
+all[0].innerHTML = "Diese Webseite funktioniert nicht auf dem Handy. <br> Bitte probier es auf einem PC/ Laptop <br><br> Ich wünsch euch viel Spaß beim Durchlesen bzw. Durcharbeiten der Webseite 😊"
 }
-   
-
-
 
 function ever(){
     requestAnimationFrame(ever);
@@ -57,9 +54,6 @@ function ever(){
     if(all[i] == document.getElementById("change"))
        document.body.style.backgroundColor = "#cccccc";     
         
-        
-     
-    //das passiert bei allen Elementen.
     all[i].classList.add("fade-in");
     all[i].style.visibility = "visible"; 
     i++; 
